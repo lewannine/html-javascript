@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio Edad</title>
+</head>
+<body>
+<p>Promedio de edades para una familia.</p>
+
+
+<script>
+    function saltarLinea() {
+    document.write("<br><br><br>")
+}
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarLinea();
+}
+
+var cantidadPersonas = parseInt(prompt("Ingrese el número total de integrantes en su familia: "));
+contador = 1;
+sumaEdades = 0;
+
+while (contador <= cantidadPersonas) {
+    edad = parseInt(prompt("Digite la edad del miembro: "));
+    sumaEdades = sumaEdades + edad;
+    totalFinal = sumaEdades / cantidadPersonas;
+    contador++;
+}
+
+imprimir("El total de las edades es: " + totalFinal + ".");
+imprimir("FIN.");
+</script>
+</body>
+</html>

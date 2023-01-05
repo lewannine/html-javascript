@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <title>Imprimir estrellas</title>
+</head>
+<body>
+    <p>Contar estrellas con el ciclo FOR.</p>
+
+
+<script>
+        function saltarLinea() {
+    document.write("<br><br><br>");
+}
+
+function imprimirMensaje(frase) {
+    document.write(frase);
+    saltarLinea();
+}
+
+for (let lineas = 1; lineas <= 3; lineas++) {
+
+    for (let columnas = 1; columnas <= 10; columnas++){
+        document.write("*");
+    }
+    saltarLinea();
+}
+
+saltarLinea();
+saltarLinea();
+
+imprimirMensaje("FIN.");
+
+</script>
+</body>
+</html>
